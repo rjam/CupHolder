@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample-mvp</string>
+    <string name="increment">increment</string>
+</resources>
