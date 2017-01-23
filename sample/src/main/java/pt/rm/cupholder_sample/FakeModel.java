@@ -8,9 +8,21 @@ package pt.rm.cupholder_sample;
 
 public class FakeModel {
 
-    public int number;
+    private int mNumber;
 
     public FakeModel(int number) {
-        this.number = number;
+        this.mNumber = number;
+    }
+
+    public int getNumber() {
+        return mNumber;
+    }
+
+    public void setNumber(int number) {
+        this.mNumber = number;
+    }
+
+    public int increment() {
+        return ++mNumber;
     }
 }

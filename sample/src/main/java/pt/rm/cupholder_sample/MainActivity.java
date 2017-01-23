@@ -37,11 +37,11 @@ public class MainActivity extends HolderActivity<FakeModel> {
     }
 
     private void initView() {
-        updateNumber(mModel.number);
+        updateNumber(mModel.getNumber());
     }
 
     public void onIncrement(View view) {
-        updateNumber(++mModel.number);
+        updateNumber(mModel.increment());
     }
 
     private void updateNumber(int number) {

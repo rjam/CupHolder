@@ -41,11 +41,11 @@ public class TestFragment extends Fragment {
                 onIncrement(v);
             }
         });
-        updateNumber(mModel.number);
+        updateNumber(mModel.getNumber());
     }
 
     public void onIncrement(View view) {
-        updateNumber(++mModel.number);
+        updateNumber(mModel.increment());
     }
 
     private void updateNumber(int number) {

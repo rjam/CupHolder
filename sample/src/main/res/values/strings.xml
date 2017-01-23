@@ -2,4 +2,6 @@
     <string name="app_name">CupHolder</string>
     <string name="title_activity_fragment_test">FragmentTestActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="increment">increment</string>
+    <string name="go_to_fragment_activity">go to fragment activity</string>
 </resources>
