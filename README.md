@@ -1,5 +1,5 @@
 # CupHolder
-CupHolder lets you easily retain Activity state on configuration changes, similarly to what you get when using retained Fragments.
+CupHolder lets you easily retain Activity state on configuration changes, similarly to what you get when using retained Fragments. On MVP projects, this can be particularly useful to persist Presenters across orientation changes and other configuration changes. 
 
 ###Sure, show me the code###
 
