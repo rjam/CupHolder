@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CupHolder</string>
+    <string name="title_activity_fragment_test">FragmentTestActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
