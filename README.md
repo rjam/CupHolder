@@ -34,3 +34,7 @@ With the previous code, despite the activity being recreated when there's a conf
 ###Ok, but how does it work?###
 
 At its core the library acts simply as a wrapper for the lesser known [onRetainNonConfigurationInstance](https://developer.android.com/reference/android/app/Activity.html#onRetainNonConfigurationInstance()) / [onRetainCustomNonConfigurationInstance](https://developer.android.com/reference/android/support/v4/app/FragmentActivity.html#onRetainCustomNonConfigurationInstance()) which have always been part of the Activity lifecycle, while providing nice default implementations for both `Activity` and `AppCompatActivity`.
+
+###Sample###
+
+In the sample app you can quickly check that the model's state (the displayed number) is being kept across screen rotations. A second activity shows the same behavior but using a regular retained fragment for comparison. 
