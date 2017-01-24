@@ -6,25 +6,25 @@ CupHolder lets you easily retain Activity state on configuration changes, simila
 From the sample app:
 
 ```java
-public class MainActivity extends HolderActivity<FakeModel> {
+public class MainActivity extends HolderActivity<MainPresenter> {
 
-    private FakeModel mModel;
+    MainPresenter mPresenter;
 
     @Override
-    public void onInitInstance(@Nullable FakeModel instance) {
+    public void onInitInstance(@Nullable MainPresenter instance) {
         if (instance != null) {
-            // restore the model's previous instance
-            mModel = instance;
+            // restore the retained presenter instance
+            mPresenter = instance;
         } else {
-            // nothing stored, create it now
-            mModel = new FakeModel(0);
+            // nothing stored yet, create new presenter 
+            mPresenter = new MainPresenter(0);
         }
     }
 
     @Nullable
     @Override
-    public FakeModel onHoldInstance() {
-        return mModel;
+    public MainPresenter onHoldInstance() {
+        return mPresenter;
     }
 }
 ```
