@@ -12,7 +12,7 @@ import pt.rm.cupholder.HoldingCup;
  * @author ricardomoutinho
  */
 
-public abstract class HolderActivity2<InstanceType> extends Activity implements HoldingCup<InstanceType> {
+public abstract class HolderNonCompatActivity<InstanceType> extends Activity implements HoldingCup<InstanceType> {
 
     CupHolder<InstanceType> mHolder;
 

@@ -16,7 +16,7 @@ public abstract class BasePresenter<ViewType> {
     }
 
     @CallSuper
-    public void dettachView() {
+    public void detachView() {
         mView = null;
     }
 
