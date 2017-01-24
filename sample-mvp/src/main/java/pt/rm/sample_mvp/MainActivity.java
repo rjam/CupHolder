@@ -43,7 +43,7 @@ public class MainActivity extends HolderActivity<MainPresenter> implements MainV
 
     @Override
     protected void onDestroy() {
-        mPresenter.dettachView();
+        mPresenter.detachView();
         super.onDestroy();
     }
 
