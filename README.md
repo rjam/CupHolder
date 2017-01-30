@@ -45,3 +45,23 @@ In the sample app you can quickly verify that the model's state (the displayed n
 
 A similar project showcasing how the library can be used to easily retain Presenters during configuration changes.
 
+###Dependency
+
+Available through jitpack: https://jitpack.io/#rjam/CupHolder
+
+**Step 1.** Add the JitPack repository to your build file:
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+**Step 2.** Add the dependency
+
+```
+dependencies {
+    compile 'com.github.rjam:CupHolder:<latest-release>'
+}
+```
