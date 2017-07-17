@@ -1,7 +1,7 @@
 # CupHolder
 CupHolder lets you easily retain Activity state on configuration changes, similarly to what you get when using retained Fragments. On MVP projects, this can be particularly useful to persist Presenters across orientation changes and other configuration changes. 
 
-###Sure, show me the code###
+### Sure, show me the code ###
 
 From the sample app:
 
@@ -35,7 +35,7 @@ With the previous code, despite the activity being recreated when there's a conf
 
 At its core the library acts simply as a wrapper for the lesser known [onRetainNonConfigurationInstance](https://developer.android.com/reference/android/app/Activity.html#onRetainNonConfigurationInstance()) / [onRetainCustomNonConfigurationInstance](https://developer.android.com/reference/android/support/v4/app/FragmentActivity.html#onRetainCustomNonConfigurationInstance()) which have always been part of the Activity lifecycle, while providing friendly default implementations for both `Activity` and `AppCompatActivity`.
 
-###Sample Projects###
+### Sample Projects ###
 
 **Sample**
 
@@ -45,7 +45,7 @@ In the sample app you can quickly verify that the model's state (the displayed n
 
 A similar project showcasing how the library can be used to easily retain Presenters during configuration changes.
 
-###Dependency
+### Dependency
 
 Available through jitpack: https://jitpack.io/#rjam/CupHolder
 
